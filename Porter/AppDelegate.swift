@@ -1,12 +1,14 @@
 //
 //  AppDelegate.swift
-//  Porter
+//  //  GoogleMapAPI
 //
 //  Created by abhijeet upadhyay on 22/01/18.
 //  Copyright © 2018 self. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Places
+        GMSPlacesClient.provideAPIKey(ThirdPartyLibConstants.GOOGLE_API_KEY)
+        
+        //Map
+        GMSServices.provideAPIKey(ThirdPartyLibConstants.GOOGLE_API_KEY)
         return true
     }
 

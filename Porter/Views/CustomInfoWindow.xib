@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomInfoWindow" customModule="Porter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-jZ-vc6">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="xNR-FA-ud7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-HM-qUs">
+                    <rect key="frame" x="169" y="5" width="2" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="Axs-2u-NM4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIR-PL-s4X">
+                    <rect key="frame" x="190" y="0.0" width="103" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="BOOK NOW">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.26274509800000001" green="0.32156862749999998" blue="0.54666835483605447" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="m0z-HM-qUs" secondAttribute="bottom" constant="5" id="FLf-tJ-v77"/>
+                <constraint firstItem="m0z-HM-qUs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Lc6-7J-Wg2"/>
+                <constraint firstItem="aLU-jZ-vc6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Y9t-rD-MSg"/>
+                <constraint firstItem="m0z-HM-qUs" firstAttribute="leading" secondItem="aLU-jZ-vc6" secondAttribute="trailing" constant="29" id="aOk-ZE-XIX"/>
+                <constraint firstItem="aLU-jZ-vc6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qAu-Zc-QdP"/>
+                <constraint firstItem="aLU-jZ-vc6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xjL-YQ-Y9v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoLabel" destination="aLU-jZ-vc6" id="gt0-C7-5OE"/>
+            </connections>
+            <point key="canvasLocation" x="-92.5" y="125.5"/>
+        </view>
+    </objects>
+</document>
